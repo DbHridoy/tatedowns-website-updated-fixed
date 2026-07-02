@@ -26,21 +26,21 @@ export const googleReviewsUrl = "#"; // TODO: paste your Google reviews link
 
 export const reviews: Review[] = [
   {
-    name: "[Reviewer name]",
+    name: "Ami Eckel",
     rating: 5,
-    text: "[Placeholder — paste a real Google review here by editing src/data/reviews.ts]",
+    text: "These guys did a great job! Detailed estimates, fair pricing. The crew was timely and professional! Give them a chance you will not be disappointed!",
     date: "",
   },
   {
-    name: "[Reviewer name]",
+    name: "Frank Selmi",
     rating: 5,
-    text: "[Placeholder — paste a real Google review here by editing src/data/reviews.ts]",
+    text: "This crew did a fantastic job on a 50 year old steel siding for us last year. Very professional, taped all the windows, pre washed and painted the siding and trim. We are very happy with the results and highly recommend this company.",
     date: "",
   },
   {
-    name: "[Reviewer name]",
+    name: "Jimmy",
     rating: 5,
-    text: "[Placeholder — paste a real Google review here by editing src/data/reviews.ts]",
+    text: "I used TTM Painting last summer and they did amazing job on my garage. Everything turned out exactly how I wanted. The crew was on time, professional, and left everything spotless. I would definitely use them again.",
     date: "",
   },
 ];
