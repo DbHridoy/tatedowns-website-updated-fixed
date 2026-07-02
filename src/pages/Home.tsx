@@ -413,8 +413,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="text-center mt-12">
-            <Button size="lg" variant="default" asChild>
+          <div className="mt-12 text-center">
+            <Button
+              size="lg"
+              variant="accent"
+              asChild
+              className="h-12 rounded-md bg-accent px-10 text-base font-bold text-accent-foreground shadow-cta hover:bg-accent-hover"
+            >
               <Link to="/get-estimate">Start Your Transformation Today</Link>
             </Button>
           </div>

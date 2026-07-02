@@ -61,6 +61,7 @@ export default function Reviews() {
             variant="outline"
             size="lg"
             asChild
+            className="h-12 rounded-md border-primary/25 bg-white px-10 text-base font-bold text-primary shadow-soft hover:bg-muted hover:text-primary"
           >
             <a href={googleReviewsUrl} target="_blank" rel="noopener noreferrer">
               Read More Reviews on Google
