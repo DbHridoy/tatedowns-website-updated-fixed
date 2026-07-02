@@ -112,7 +112,7 @@ export default function Home() {
             <div className="flex justify-center mb-6 mt-4 animate-fade-in">
               <Badge variant="secondary" className="px-4 py-2 text-sm bg-white/20 backdrop-blur-sm border-white/30 text-white">
                 <Sparkles className="w-4 h-4 mr-2 inline" />
-                Evanston & North Shore • Licensed • Bonded • Insured
+                Licensed • Bonded • Insured in Illinois
               </Badge>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in text-white">

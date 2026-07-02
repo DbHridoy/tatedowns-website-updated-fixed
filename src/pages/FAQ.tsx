@@ -60,7 +60,7 @@ const generalFAQs = [
   },
   {
     question: "How many homes have you painted?",
-    answer: "We're a growing company, and every project — large or small — receives the same attention to detail and commitment to quality. We're happy to share examples of our recent work and provide references on request."
+    answer: "We've successfully completed over 60 homes and continue to grow our satisfied customer base. Each project receives the same attention to detail and commitment to quality that has built our reputation in the area."
   }
 ];
 
