@@ -58,7 +58,6 @@ export default function GetEstimate() {
   const [noteFile, setNoteFile] = useState(null);
   const [formData, setFormData] = useState({
     clientName: "",
-    partnerName: "",
     phoneNumber: "",
     email: "",
     address: "",
@@ -201,7 +200,7 @@ export default function GetEstimate() {
                     className="space-y-6 bg-white section-pad border p-4 rounded-lg"
                   >
                     {/* Client Info */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
                       <div>
                         <label className="block text-sm sm:text-base font-semibold mb-2">
                           Name <RequiredMark />
@@ -211,17 +210,6 @@ export default function GetEstimate() {
                           onChange={(e) => handleInputChange("clientName", e.target.value)}
                           className="w-full border px-3 py-2 rounded-lg text-sm sm:text-base"
                           required
-                        />
-                      </div>
-
-                      <div>
-                        <label className="block text-sm sm:text-base font-semibold mb-2">
-                          Partner Name
-                        </label>
-                        <input
-                          value={formData.partnerName}
-                          onChange={(e) => handleInputChange("partnerName", e.target.value)}
-                          className="w-full border px-3 py-2 rounded-lg text-sm sm:text-base"
                         />
                       </div>
                     </div>
