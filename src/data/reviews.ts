@@ -22,7 +22,7 @@ export interface Review {
   date?: string;
 }
 
-export const googleReviewsUrl = "#"; // TODO: paste your Google reviews link
+export const googleReviewsUrl = "https://www.google.com/search?rlz=1C1HKFL_enUS1218US1218&sca_esv=5ae8043895ad1db6&biw=1920&bih=945&sxsrf=APpeQntaHFS-AhGpVkg4iyJt20GKXtD5DA%3A1782944917299&q=TTM%20Painting&stick=H4sIAAAAAAAAAONgU1IxqDAxM7RMtTAxNjI1S7UwTrICilhYpBoamKSaJpqbpySZJS1i5QkJ8VUISMzMK8nMSwcA8a7G5TcAAAA&mat=CUNq6_Ks0DYM&ved=2ahUKEwiW-cuzw7KVAxWbhSsGHZqaNwQQrMcEegQIMBAC#mpd=~880120218425977411/customers/reviews"; // TODO: paste your Google reviews link
 
 export const reviews: Review[] = [
   {
