@@ -137,9 +137,9 @@ export default function ServiceAreas() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
             {cities.map((c) => (
-              <Button key={c.slug} variant="outline" asChild className="h-auto py-4 justify-center">
+              <Button key={c.slug} variant="outline" asChild className="group h-auto py-4 justify-center">
                 <Link to={`/painters/${c.slug}`} className="text-center">
-                  <MapPin className="h-4 w-4 mr-2 inline text-accent" />
+                  <MapPin className="mr-2 inline h-4 w-4 text-accent transition-colors group-hover:text-black" />
                   {c.name}
                 </Link>
               </Button>
