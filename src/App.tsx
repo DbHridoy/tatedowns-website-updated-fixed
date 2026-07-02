@@ -19,6 +19,8 @@ import Commercial from "./pages/Commercial";
 import ServiceAreas from "./pages/ServiceAreas";
 import Portfolio from "./pages/Portfolio";
 import CityLanding from "./pages/CityLanding";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +48,8 @@ const App = () => (
             <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/painters/:city" element={<CityLanding />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
