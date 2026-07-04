@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Seo from "@/components/Seo";
 import { CheckCircle, Clock, Shield, Phone, Mail, MapPin } from "lucide-react";
 import RequiredMark from "@/components/common/RequiredMark";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
 import ClientNote from "@/components/common/ClientNote";
@@ -25,14 +25,6 @@ const benefits = [
     description: "Our free estimates come with zero pressure. Take your time to decide."
   }
 ];
-
-const JOBBER_CLIENT_HUB_ID = "3f2be4ce-f6a2-414c-95b4-8211aaed3546";
-const JOBBER_SCRIPT_SRC =
-  "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
-const JOBBER_STYLE_HREF =
-  "https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css";
-const JOBBER_FORM_URL =
-  "https://clienthub.getjobber.com/client_hubs/3f2be4ce-f6a2-414c-95b4-8211aaed3546/public/work_request/embedded_work_request_form";
 
 function formatPhoneNumber(value: string) {
   const digits = value.replace(/\D/g, "").slice(0, 10);
@@ -75,32 +67,6 @@ export default function GetEstimate() {
     String(currentYear - index),
   );
   const leadsPath = "/s/sales-rep/leads";
-
-  useEffect(() => {
-    const styleId = "jobber-work-request-style";
-    const scriptId = "jobber-work-request-script";
-
-    let linkEl = document.getElementById(styleId) as HTMLLinkElement | null;
-    if (!linkEl) {
-      linkEl = document.createElement("link");
-      linkEl.id = styleId;
-      linkEl.rel = "stylesheet";
-      linkEl.href = JOBBER_STYLE_HREF;
-      linkEl.media = "screen";
-      document.head.appendChild(linkEl);
-    }
-
-    const existingScript = document.getElementById(scriptId) as HTMLScriptElement | null;
-    if (!existingScript) {
-      const script = document.createElement("script");
-      script.id = scriptId;
-      script.src = JOBBER_SCRIPT_SRC;
-      script.setAttribute("clienthub_id", JOBBER_CLIENT_HUB_ID);
-      script.setAttribute("form_url", JOBBER_FORM_URL);
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
 
   const handleInputChange = (field, value) => {
     const nextValue = field === "phoneNumber" ? formatPhoneNumber(value) : value;
