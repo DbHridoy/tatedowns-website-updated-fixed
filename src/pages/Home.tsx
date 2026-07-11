@@ -182,7 +182,7 @@ export default function Home() {
               </div>
               <div className="text-left">
                 <div className="font-semibold">60+ Homes Painted</div>
-                <div className="text-sm text-muted-foreground">Through The Greater Chicago Area</div>
+                <div className="text-sm text-muted-foreground">Throughout The Greater Chicago Area</div>
               </div>
             </div>
           </div>
